@@ -1,0 +1,159 @@
+$primary: #82adc6;
+$info: #FFF48F;
+$light: #FAEDDF;
+$secondary:#F0DECA;
+$dark: #75574E;
+$warning: #FCF7F1;
+$danger: #F8A577;
+
+$progress-height: 0.8rem;
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.little {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.icon {
+    transition: 1s;
+}
+
+.icon:hover {
+    color: $primary;
+    transform: scale(1.1);
+    transform: translateY(10px);
+}
+
+.portfolio {
+    @media (max-width: 767px){
+        height: 60vh;
+    }
+    @media (min-width: 768px){
+        height: 30vw;
+    }
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: opacity(70%) sepia(50%);
+        // grayscale(100%);
+        transition: 2s;
+    }
+}
+
+.portfolio:hover {
+    img {
+        filter: opacity(100%) sepia(0);
+    }
+}
+
+// .kwadrat {
+//     height: 19.44vw;
+// }
+
+.kwadrat {
+    position: relative;
+    width: 33%;
+    /* desired width */
+}
+
+.kwadrat:before {
+    content: "";
+    float: left;
+    @media (max-width: 575px) {
+        padding-top: 30%;
+    }
+    @media (min-width: 576px) {
+        padding-top: 100%;
+    }
+
+
+}
+
+input {
+    background-color: $secondary;
+    border-top: none;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    margin-bottom: 3vh;
+
+}
+
+textarea {
+    background-color: $secondary;
+    border-top: none;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+// cieńsze ikony fontawesome
+i {
+    -webkit-text-stroke: 2px $warning;
+}
+
+.symbolUnfilled {
+    width: 30px;
+    height: 30px;
+    border: 2px $primary solid;
+}
+
+.symbolFilled {
+    background: $primary;
+    width: 30px;
+    height: 30px;
+    border: 2px $primary solid;
+}
+
+.podpis {
+    display: none;
+    position: absolute;
+    width: 65%;
+    height:6rem;
+    background: #F0DECA;
+    
+    bottom: 0;
+    right: 17.5%;
+  }
+  
+  .podpis p {
+    font-weight: bold;
+    text-align: center;
+    line-height: 6rem;
+  }
+  
