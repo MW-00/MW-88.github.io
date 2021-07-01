@@ -9,12 +9,19 @@ $("#lista a").click(function(){
 });
 
 $(".tytuly li a").click(function(){
-    $(".tytuly li a").removeClass("titleClicked");    
-    $(this).toggleClass("titleClicked");
-    $("#frame").attr("src", "podstrony/pusta.html");
-    $(".menu").slideUp();
-    $("footer").hide();
-    $(".main").show();
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        $(".tytuly li a").removeClass("titleClicked");    
+        $(this).toggleClass("titleClicked");
+        $("#frame").attr("src", "podstrony/pusta.html");
+        $(".menu").hide();
+        $("footer").hide();
+        $(".main").show();
+    } else {
+        $(".tytuly li a").removeClass("titleClicked");    
+        $(this).toggleClass("titleClicked");
+        $("#frame").attr("src", "podstrony/pusta.html");
+    }
+    
 });
 
 $(".rodzaj").click(function(){
@@ -27,12 +34,6 @@ $(".rodzaj").click(function(){
         $(this).addClass("titleClicked");
     }
 });
-
-// monogram w pętli
-setInterval(function(){loop()},600);
-function loop(){
-    $("#monogram").fadeToggle(4000);
-}
 
 });
 
