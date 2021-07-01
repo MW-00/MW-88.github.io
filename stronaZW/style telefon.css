@@ -1,0 +1,155 @@
+/* fonty */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+
+/* zmienne kolorów */
+:root {
+    --szary: #F6F6F6;
+}
+
+/* ustawienia strony */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* grid-template-columns: 300px auto; */
+    /* grid-template-rows: 125px auto 50px; */
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.main {
+    height: 100%;
+    display: none;
+    background-image: url('podstrony/welcome/book3.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-position: top right; 
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+
+
+.logo {
+    /* grid-area: logo; */
+    height: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Princess Sofia';
+    font-size: 36px;
+    line-height: 36px;
+
+}
+
+.logo:hover {
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+.tytuly {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding:0;
+    font-size: 18px;
+    display: none;
+    height: auto;
+    /* max-height: 300px; */
+    /* overflow: scroll; */
+    /* -ms-overflow-style: none; */
+    /* IE and Edge */
+    /* scrollbar-width: none; */
+    /* Firefox */
+}
+
+.tytuly li {
+    padding-top:8px;
+}
+.tytuly::-webkit-scrollbar {
+    /* display: none; */
+}
+
+.menu {
+    /* grid-area: menu; */
+    font-size: 22px;
+
+}
+
+
+footer {
+    /* grid-area: footer; */
+    /* margin-bottom: 55px; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Princess Sofia';
+    font-size: 30px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 1vh;
+
+}
+
+section {
+    margin: 0;
+    background-color: #F6F6F6;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+iframe {
+       margin: 0;
+       height: 100%;
+
+}
+
+.titleClicked {
+    font-weight: 600;
+}
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(172, 172, 172);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+

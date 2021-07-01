@@ -57,6 +57,8 @@ p2 {
 pre {
     font-size: 18px;
     font-family: 'Playfair Display';
+    word-wrap: break-word;
+    white-space: pre-wrap;
     
 }
 
