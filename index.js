@@ -36,5 +36,17 @@ $(".portfolio").mouseleave(function(){
   $(this).find(".podpis").slideUp("slow");
 });
 
-
 });
+
+
+// przycisk powrotu na górę 
+upButton = document.getElementById("upButton");
+var windowScroll = function() {
+  if (window.scrollY >= 400) {
+    upButton.className = "opacity1"
+  } else {
+    upButton.className = "opacity0"
+  }
+};
+window.addEventListener("scroll", windowScroll);
+

@@ -11534,7 +11534,6 @@ a:hover {
 .kwadrat {
   position: relative;
   width: 33%;
-  /* desired width */
 }
 
 .kwadrat:before {
@@ -11578,7 +11577,7 @@ textarea {
   border-radius: 0;
 }
 
-i {
+#about i {
   -webkit-text-stroke: 2px #FCF7F1;
 }
 
@@ -11608,6 +11607,64 @@ i {
 .podpis p {
   font-weight: bold;
   text-align: center;
-  line-height: 6rem;
+  margin: auto 3px;
+  line-height: normal;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #F0DECA inset !important;
+}
+
+#upButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#upButtonSymbol {
+  width: 30px;
+  height: 30px;
+  /* background-color: white; */
+  border-top: #75574E solid 3px;
+  border-left: #75574E solid 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  /* -webkit-text-stroke: 2px #FAEDDF; */
+}
+
+#upButton:hover {
+  -webkit-transform: translateY(-1vh);
+          transform: translateY(-1vh);
+  -webkit-text-stroke: 2px #FCF7F1;
+}
+
+#upButton i {
+  color: #75574E;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+.opacity1 {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

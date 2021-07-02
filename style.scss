@@ -1,4 +1,4 @@
-$primary: #82adc6;
+$primary: rgb(130, 173, 198);
 $info: #FFF48F;
 $light: #FAEDDF;
 $secondary:#F0DECA;
@@ -74,14 +74,11 @@ a:hover {
     }
 }
 
-// .kwadrat {
-//     height: 19.44vw;
-// }
 
 .kwadrat {
     position: relative;
     width: 33%;
-    /* desired width */
+
 }
 
 .kwadrat:before {
@@ -123,7 +120,7 @@ textarea {
 }
 
 // cieńsze ikony fontawesome
-i {
+#about i {
     -webkit-text-stroke: 2px $warning;
 }
 
@@ -145,15 +142,66 @@ i {
     position: absolute;
     width: 65%;
     height:6rem;
-    background: #F0DECA;
-    
+    background: $secondary;
     bottom: 0;
     right: 17.5%;
+    
   }
   
   .podpis p {
     font-weight: bold;
     text-align: center;
-    line-height: 6rem;
+    margin: auto 3px;
+    line-height: normal;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   
+// autofill color input
+  input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px $secondary inset !important;
+}
+
+
+// przycisk powrotu na górę
+#upButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:3vh;
+    right:3vh;
+    transition: 0.4s;
+}
+#upButtonSymbol {
+    width: 30px;
+    height: 30px;
+    /* background-color: white; */
+    border-top: $dark solid 3px;
+    border-left: $dark solid 3px;
+    transform: rotate(45deg);
+    /* -webkit-text-stroke: 2px #FAEDDF; */
+}
+
+#upButton:hover {
+    transform: translateY(-1vh);
+    -webkit-text-stroke: 2px #FCF7F1;
+    
+}
+#upButton i{
+    color: #75574E;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+.opacity1 {
+    opacity: 1;
+}
