@@ -137,3 +137,18 @@ iframe {
     background: #555;
 }
 
+#trojkat {
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid #555;
+    border-left: 3px solid #555;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 3vh;
+    right: 2vh;
+    /* background-color: red; */
+}
+
+#powrot {
+    display: none;
+}

@@ -7,6 +7,7 @@ $("#lista a").click(function(){
     $(this).parent().find("ul").slideToggle("slow");
 });
 
+// ukrycie sekcji w widoku telefonu
 $(".tytuly li a, #oAutorze").click(function(){
     if (window.matchMedia('(max-width: 767px)').matches) {
         $(".tytuly li a").removeClass("titleClicked");    
@@ -23,16 +24,24 @@ $(".tytuly li a, #oAutorze").click(function(){
     
 });
 
+
+//cofniecie pogrubienia przy zwinieciu menu
 $(".rodzaj").click(function(){
     if ($(this).hasClass("titleClicked")) {
         $(this).removeClass("titleClicked");
         $("#frame").attr("src", "podstrony/pusta.html");
-    }
+        }
     else {
         $(".rodzaj").removeClass("titleClicked");
         $(this).addClass("titleClicked");
     }
 });
+
+//pojawienie sie strzałki powrotu
+$(".tytuly li a, #oAutorze").click(function(){
+    $("#powrot").fadeIn(1500);
+})
+
 
 });
 
