@@ -7,7 +7,7 @@ $("#lista a").click(function(){
     $(this).parent().find("ul").slideToggle("slow");
 });
 
-$(".tytuly li a").click(function(){
+$(".tytuly li a, #oAutorze").click(function(){
     if (window.matchMedia('(max-width: 767px)').matches) {
         $(".tytuly li a").removeClass("titleClicked");    
         $(this).toggleClass("titleClicked");

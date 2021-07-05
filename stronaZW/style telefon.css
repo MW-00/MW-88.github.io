@@ -27,8 +27,6 @@ body {
     display: none;
     background-image: url('podstrony/welcome/book3.jpg');
     background-size: cover;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed; */
     background-position: top right; 
 }
 
@@ -45,7 +43,6 @@ a:hover {
 
 
 .logo {
-    /* grid-area: logo; */
     height: auto;
     display: flex;
     padding: 10px;
@@ -63,6 +60,7 @@ a:hover {
 
 ul {
     list-style: none;
+    padding: 2vh;
 }
 
 .tytuly {
@@ -72,12 +70,6 @@ ul {
     font-size: 18px;
     display: none;
     height: auto;
-    /* max-height: 300px; */
-    /* overflow: scroll; */
-    /* -ms-overflow-style: none; */
-    /* IE and Edge */
-    /* scrollbar-width: none; */
-    /* Firefox */
 }
 
 .tytuly li {
@@ -108,8 +100,8 @@ footer {
 section {
     margin: 0;
     background-color: #F6F6F6;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
