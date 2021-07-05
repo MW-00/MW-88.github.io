@@ -26,16 +26,22 @@ $(".lista").mouseleave(function(){
 });
 
 
-$(".portfolio").mouseover(function(){
-  $(this).find(".podpis").stop();
-  $(this).find(".podpis").slideDown("slow");
-});
-$(".portfolio").mouseleave(function(){
-  
-  $(this).find(".podpis").stop();
-  $(this).find(".podpis").slideUp("slow");
-});
 
+// podpisy stron w portfolio
+if (window.matchMedia('(max-width: 767px)').matches) {
+  $(".podpis").show();
+
+  } else {
+
+    $(".portfolio").mouseover(function(){
+      $(this).find(".podpis").stop();
+      $(this).find(".podpis").slideDown("slow");
+    });
+    $(".portfolio").mouseleave(function(){
+      $(this).find(".podpis").stop();
+      $(this).find(".podpis").slideUp("slow");
+    });
+  }
 });
 
 

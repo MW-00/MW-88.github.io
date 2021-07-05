@@ -19,8 +19,6 @@ body {
     font-family: 'Playfair Display';
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 
@@ -32,7 +30,6 @@ body {
     /* background-repeat: no-repeat;
     background-attachment: fixed; */
     background-position: top right; 
-    
 }
 
 
@@ -58,7 +55,6 @@ a:hover {
     font-family: 'Princess Sofia';
     font-size: 36px;
     line-height: 36px;
-
 }
 
 .logo:hover {
@@ -94,13 +90,11 @@ ul {
 .menu {
     /* grid-area: menu; */
     font-size: 22px;
-
 }
 
 
 footer {
     /* grid-area: footer; */
-    /* margin-bottom: 55px; */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -109,7 +103,6 @@ footer {
     height: auto;
     margin-top: auto;
     margin-bottom: 1vh;
-
 }
 
 section {
@@ -119,7 +112,6 @@ section {
     padding-right: 5vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
-
 }
 
 iframe {

@@ -11597,11 +11597,25 @@ textarea {
 .podpis {
   display: none;
   position: absolute;
-  width: 65%;
-  height: 6rem;
   background: #F0DECA;
-  bottom: 0;
-  right: 17.5%;
+}
+
+@media (max-width: 767px) {
+  .podpis {
+    left: 10%;
+    bottom: 5%;
+    width: 80%;
+    height: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .podpis {
+    right: 17.5%;
+    bottom: 0;
+    width: 65%;
+    height: 6rem;
+  }
 }
 
 .podpis p {

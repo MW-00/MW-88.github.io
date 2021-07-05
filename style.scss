@@ -137,14 +137,25 @@ textarea {
     border: 2px $primary solid;
 }
 
+
+
 .podpis {
+    @media (max-width: 767px){
+        left: 10%;
+        bottom: 5%;
+        width: 80%;
+        height:4rem;
+    }
+    @media (min-width: 768px){
+        right: 17.5%;
+        bottom: 0;
+        width: 65%;
+        height:6rem;
+    }
+
     display: none;
     position: absolute;
-    width: 65%;
-    height:6rem;
     background: $secondary;
-    bottom: 0;
-    right: 17.5%;
     
   }
   
