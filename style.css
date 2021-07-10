@@ -11499,6 +11499,24 @@ a:hover {
           transform: translateY(10px);
 }
 
+@media (max-width: 575px) and (max-aspect-ratio: 8 / 12) {
+  #portrait {
+    height: calc(100vh - 56px);
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+}
+
+@media (max-width: 575px) and (min-aspect-ratio: 8 / 12) {
+  #portrait {
+    height: calc(100vh - 56px);
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+}
+
 .portfolio {
   position: relative;
 }
@@ -11656,12 +11674,10 @@ input:-webkit-autofill:active {
 #upButtonSymbol {
   width: 30px;
   height: 30px;
-  /* background-color: white; */
   border-top: #75574E solid 3px;
   border-left: #75574E solid 3px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  /* -webkit-text-stroke: 2px #FAEDDF; */
 }
 
 #upButton:hover {

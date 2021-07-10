@@ -49,6 +49,20 @@ a:hover {
     transform: translateY(10px);
 }
 
+#portrait {
+    @media (max-width: 575px){  
+        @media (max-aspect-ratio: 8/12) {
+            height: calc(100vh - 56px);
+            object-fit: cover;
+            position: relative;
+        }
+        @media (min-aspect-ratio: 8/12){
+            height: calc(100vh - 56px);
+            object-fit: cover;
+            position: relative;
+        }
+    }
+}
 .portfolio {
     @media (max-width: 767px){
         height: 60vh;
@@ -74,11 +88,10 @@ a:hover {
     }
 }
 
-
+// tytuly sekcji w kwadratowych polach
 .kwadrat {
     position: relative;
     width: 33%;
-
 }
 
 .kwadrat:before {
@@ -90,8 +103,6 @@ a:hover {
     @media (min-width: 576px) {
         padding-top: 100%;
     }
-
-
 }
 
 input {
@@ -102,7 +113,6 @@ input {
     border-right: none;
     width: 100%;
     margin-bottom: 3vh;
-
 }
 
 textarea {
@@ -194,11 +204,9 @@ input:-webkit-autofill:active
 #upButtonSymbol {
     width: 30px;
     height: 30px;
-    /* background-color: white; */
     border-top: $dark solid 3px;
     border-left: $dark solid 3px;
     transform: rotate(45deg);
-    /* -webkit-text-stroke: 2px #FAEDDF; */
 }
 
 #upButton:hover {
