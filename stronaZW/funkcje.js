@@ -39,7 +39,9 @@ $(".rodzaj").click(function(){
 
 //pojawienie sie strzałki powrotu
 $(".tytuly li a, #oAutorze").click(function(){
+    if (window.matchMedia('(max-width: 767px)').matches) {
     $("#powrot").fadeIn(1500);
+    }
 })
 
 
