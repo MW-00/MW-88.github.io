@@ -11504,7 +11504,6 @@ a:hover {
     height: calc(100vh - 56px);
     -o-object-fit: cover;
        object-fit: cover;
-    position: relative;
   }
 }
 
@@ -11513,7 +11512,6 @@ a:hover {
     height: calc(100vh - 56px);
     -o-object-fit: cover;
        object-fit: cover;
-    position: relative;
   }
 }
 

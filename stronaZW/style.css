@@ -28,6 +28,7 @@ body {
     /* background-repeat: no-repeat;
     background-attachment: fixed; */
     background-position: top right; 
+   
 }
 
 
@@ -106,7 +107,7 @@ footer {
 section {
     margin: 0;
     grid-area: tresc;
-
+    
 
     background-color: #F6F6F6;
     padding-left: 15vh;
@@ -145,5 +146,9 @@ iframe {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+#powrot {
+    display: none;
 }
 

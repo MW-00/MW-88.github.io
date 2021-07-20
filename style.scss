@@ -54,12 +54,10 @@ a:hover {
         @media (max-aspect-ratio: 8/12) {
             height: calc(100vh - 56px);
             object-fit: cover;
-            position: relative;
         }
         @media (min-aspect-ratio: 8/12){
             height: calc(100vh - 56px);
             object-fit: cover;
-            position: relative;
         }
     }
 }

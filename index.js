@@ -30,16 +30,14 @@ $(".lista").mouseleave(function(){
 // podpisy stron w portfolio
 if (window.matchMedia('(max-width: 767px)').matches) {
   $(".podpis").show();
-
   } else {
-
     $(".portfolio").mouseover(function(){
       $(this).find(".podpis").stop();
-      $(this).find(".podpis").slideDown("slow");
+      $(this).find(".podpis").fadeIn("slow");
     });
     $(".portfolio").mouseleave(function(){
       $(this).find(".podpis").stop();
-      $(this).find(".podpis").slideUp("slow");
+      $(this).find(".podpis").fadeOut("slow");
     });
   }
 });
