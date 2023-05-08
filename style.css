@@ -11628,7 +11628,7 @@ textarea {
 @media (min-width: 768px) {
   .podpis {
     right: 17.5%;
-    bottom: 0;
+    bottom: 5%;
     width: 65%;
     height: 6rem;
   }
