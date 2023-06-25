@@ -50,24 +50,29 @@ a:hover {
 }
 
 #portrait {
-    @media (max-width: 575px){  
+    @media (max-width: 575px) {
         @media (max-aspect-ratio: 8/12) {
             height: calc(100vh - 56px);
             object-fit: cover;
         }
-        @media (min-aspect-ratio: 8/12){
+
+        @media (min-aspect-ratio: 8/12) {
             height: calc(100vh - 56px);
             object-fit: cover;
         }
     }
 }
+
+
 .portfolio {
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
         height: 60vh;
     }
-    @media (min-width: 768px){
+
+    @media (min-width: 768px) {
         height: 30vw;
     }
+
     position: relative;
 
     img {
@@ -86,6 +91,31 @@ a:hover {
     }
 }
 
+.portfolioCard {
+    // @media (max-width: 767px) {
+      
+    // }
+
+    // @media (min-width: 768px) {
+        // }
+        // position: relative;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        color: $dark;
+            padding-left: 50px;
+            padding-right: 50px;
+}
+
+.portfolioCard p {
+    margin: 0;
+}
+
+.portfolioCard:hover {
+    background-color: $danger;
+}
+
 // tytuly sekcji w kwadratowych polach
 .kwadrat {
     position: relative;
@@ -95,9 +125,11 @@ a:hover {
 .kwadrat:before {
     content: "";
     float: left;
+
     @media (max-width: 575px) {
         padding-top: 30%;
     }
+
     @media (min-width: 576px) {
         padding-top: 100%;
     }
@@ -148,26 +180,27 @@ textarea {
 
 
 .podpis {
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
         left: 10%;
         bottom: 5%;
         width: 80%;
-        height:4rem;
+        height: 4rem;
     }
-    @media (min-width: 768px){
+
+    @media (min-width: 768px) {
         right: 17.5%;
         bottom: 5%;
         width: 65%;
-        height:6rem;
+        height: 6rem;
     }
 
     display: none;
     position: absolute;
     background: $secondary;
-    
-  }
-  
-  .podpis p {
+
+}
+
+.podpis p {
     font-weight: bold;
     text-align: center;
     margin: auto 3px;
@@ -177,15 +210,14 @@ textarea {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-  
+}
+
 // autofill color input
-  input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active
-{
- -webkit-box-shadow: 0 0 0 30px $secondary inset !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px $secondary inset !important;
 }
 
 
@@ -195,10 +227,11 @@ input:-webkit-autofill:active
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom:3vh;
-    right:3vh;
+    bottom: 3vh;
+    right: 3vh;
     transition: 0.4s;
 }
+
 #upButtonSymbol {
     width: 30px;
     height: 30px;
@@ -210,15 +243,17 @@ input:-webkit-autofill:active
 #upButton:hover {
     transform: translateY(-1vh);
     -webkit-text-stroke: 2px #FCF7F1;
-    
+
 }
-#upButton i{
+
+#upButton i {
     color: #75574E;
 }
 
 .opacity0 {
     opacity: 0;
 }
+
 .opacity1 {
     opacity: 1;
 }
